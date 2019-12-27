@@ -138,5 +138,17 @@ class FileHand {
         return line;
 
     }
+    
+    interface operation {
+    	
+    	public abstract int perimeter(int a, int b, int c);
+    	
+    	public abstract int inTriangle(int[][] A, int[][] B);
+    	
+    	public abstract int outTriangle(int[][] A, int[][] B);
+    	
+    	public abstract int overlaidTriangle(int[][] A, int[][] B);
+    	
+    }
 
 }
