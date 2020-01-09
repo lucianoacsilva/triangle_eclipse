@@ -71,12 +71,35 @@ class TriangleTest {
 				
 	}
 	
-	 @Disabled("Disabled method until isEscaleno been implemented")
+	 //@Disabled("Disabled method until isEscaleno been implemented")
 	 @Test
-	 @DisplayName("Test method isEscaleno")//opcional	 
-	 void isEscaleno() {		
+	 @DisplayName("Test method isScalene")//opcional	 
+	 void isScalene() {		
 		
-		 System.out.println("Nada");
+		 assertEquals(2, tr.isScalene(7, 8, 9));
+		 assertEquals(-1, tr.isScalene(7, 7, 8));
+		 //System.out.println("Nada");
+							
+	 }
+	 
+	 @Test
+	 @DisplayName("Test method isIsosceles")//opcional	 
+	 void isIsosceles() {		
+		
+		 assertEquals(-1, tr.isIsosceles(7, 8, 9));
+		 assertEquals(3, tr.isIsosceles(7, 7, 8));
+		 //System.out.println("Nada");
+							
+	 }
+	 
+	 @Disabled("Disabled method until isRectangle been implemented")
+	 @Test
+	 @DisplayName("Test method isRectangle")//opcional	 
+	 void isRectangle() {		
+		
+		 assertEquals(4, tr.isRectangle(5, 12, 13));
+		 assertEquals(-1, tr.isRectangle(7, 7, 8));
+		 //System.out.println("Nada");
 							
 	 }
 	 
