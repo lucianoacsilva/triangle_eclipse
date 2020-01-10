@@ -92,7 +92,7 @@ class TriangleTest {
 							
 	 }
 	 
-	 @Disabled("Disabled method until isRectangle been implemented")
+	 //@Disabled("Disabled method until isRectangle been implemented")
 	 @Test
 	 @DisplayName("Test method isRectangle")//opcional	 
 	 void isRectangle() {		
@@ -121,10 +121,10 @@ class TriangleTest {
 	@AfterEach
     void finaSet() {
 		
-		System.out.println("Ent Test.");
+		System.out.println("End Test.");
 		
 	}
-	
+		
 	@AfterAll
 	static void closeTest() {
 		

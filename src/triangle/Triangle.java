@@ -47,6 +47,20 @@ public class Triangle {
 	        return -1;
 
 	    }
+	    
+	    
+	    public  int isRectangle (int a, int b, int c) {
+	    	
+	    	
+	        if ((a*a == b*b + c*c) || (b*b == a*a + c*c) || (c*c == a*a + b*b)) {
+
+	            return 4;
+
+	        }
+
+	        return -1;
+
+	    }
 
 
 }
